@@ -20,7 +20,7 @@ h1{color:#d84370;font-size:26px;margin-bottom:24px}
   padding:28px 20px;
   box-shadow:0 4px 14px rgba(216,67,112,0.1);
   cursor:pointer;
-  transition:0.2s;
+  transition:0.2;
   display:flex;
   justify-content:center;
   flex-wrap:wrap;
@@ -62,7 +62,7 @@ h1{color:#d84370;font-size:26px;margin-bottom:24px}
   padding:10px 10px 20px;
   border-radius:4px;
   box-shadow:0 3px 10px rgba(0,0,0,0.12);
-  transition:0.3s;
+  transition:0.3;
 }
 .polaroid img{
   width:100%;
@@ -173,7 +173,7 @@ h1{color:#d84370;font-size:26px;margin-bottom:24px}
 <div class="modal" id="essayModal">
   <div class="modal-content">
     <div class="modal-text">
-      <h3>致我的女孩</h3>
+      <h3>彩蛋</h3>
       <p id="essayContent"></p>
       <button class="close" onclick="closeEssayModal()">关闭</button>
     </div>
@@ -193,47 +193,58 @@ const stackList = [
   {
     stackClass: "stack1",
     imgs: ["https://s41.ax1x.com/2026/10/31/pncpqUJ.png","https://s41.ax1x.com/2026/10/31/pncpbE4.jpg","https://s41.ax1x.com/2026/10/31/pncp4g0.png"],
-    title: "第一次见面",
-    story: "那天我有点紧张，却没想到你一开口，我就觉得很安心。"
+    title: "结尾与开始",
+    story: "高中喜欢了你好久 总想着没有一个正经的合照 好像不正经的合照都没有 最后鼓起勇气找你傻傻的合了一张影 衣服裤子都没有整理好 你也不提醒我一下 让我们的高中整整齐齐的结尾
+暑假心心念念约你吃饭你说要回西安 还好我不甘心 时常与你联系着 时常烦着你 一直到大一才和你吃上第一顿饭 看你吃饭的样子好可爱 还送了你小玩偶 
+接下来就是开始 怀着一颗忐忑的心 我向你表白了 虽然被你猜的八九不离十 但是你肯定想不到花出现的时机吧(≖֊≖) 还好你答应了 不然我要尴尬到吃花了"
   },
   {
     stackClass: "stack2",
     imgs: ["https://bee-reg-ab.imagency.cn/mr/202610/31/6ae5a45324b97.jpg","https://s41.ax1x.com/2026/10/31/pnc9nr8.jpg","https://s41.ax1x.com/2026/10/31/pnc9F5d.png","https://s41.ax1x.com/2026/10/31/pnc9V2t.png","https://s41.ax1x.com/2026/10/31/pnc9mKf.png","https://bee-reg-ab.imagency.cn/mr/202610/31/6ae5a45418128.jpg"],
-    title: "第一次约会",
-    story: "我们走了很久的路，聊了很多无关紧要的话，却一点都不觉得累。"
+    title: "幸福的小日常",
+    story: "和你吃了好多没吃过的好吃的 溜达了好多美美的公园 还和你在文景山上探讨了学术问题◉‿◉ 
+看见你在我身边萌萌的笑 开开心心的奔跑 总是发自内心的嘴角上扬呀 
+希望你多笑笑 和我一起傻呵呵的快乐"
   },
   {
     stackClass: "stack3",
     imgs: ["https://bee-reg-ab.imagency.cn/mr/202610/31/6ae5a2231b9d2.jpg","https://s41.ax1x.com/2026/10/31/pnc9G2q.png","https://bee-reg-ab.imagency.cn/mr/202610/31/6ae5a20fa0134.jpg","https://bee-reg-ab.imagency.cn/mr/202610/31/6ae5a5099f2ab.jpg","https://bee-reg-ab.imagency.cn/mr/202610/31/6ae5a50a3f413.jpg","https://bee-reg-ab.imagency.cn/mr/202610/31/6ae5a509c31ca.jpg"],
-    title: "确定关系那天",
-    story: "我不是一个很会表达的人，但那天我很认真地想，以后的日子都想和你一起。"
+    title: "两只猪的生日",
+    story: "看见小照片就想起来我收到小书时候流泪的样子 尴尬死了还被店员看到了 特别喜欢 和你闹矛盾的时候我就有时候翻出来看
+  也想起来小萌猪和大家过完生日自己难过过的和我说委屈屈 我说第二年和我过 我心里只有你
+  所以就有了那么多好看的生日照片呀 我做这些的时候看着都无敌心动 太可爱太萌了 我准备的好 你长的好嘻嘻
+为啥没有你给我送的花的照片！因为那系我的 不给你看"
   },
   {
     stackClass: "stack4",
     imgs: ["https://bee-reg-ab.imagency.cn/mr/202610/31/6ae5a20f9f218.jpg","https://bee-reg-ab.imagency.cn/mr/202610/31/6ae5a20eb26ea.jpg","https://bee-reg-ab.imagency.cn/mr/202610/31/6ae5a20f8f72b.jpg"],
-    title: "一起看日落",
-    story: "夕阳很漂亮，但你比日落更让我难忘。"
+    title: "一周年 ᗜ֊ᗜ",
+    story: "这个枫叶超级好看 是我们昨年过周年前一周去看的 那天冷冷的 但是和你贴贴的时候暖暖的
+周年过的也是完美 超级开心 看到照片就想起来你给我夹头发还有拍照片了 超级认真超级萌 宣！"
   },
   {
     stackClass: "stack5",
     imgs: ["https://bee-reg-ab.imagency.cn/mr/202610/31/6ae5a4572584d.jpg","https://bee-reg-ab.imagency.cn/mr/202610/31/6ae5a457240c0.jpg","https://bee-reg-ab.imagency.cn/mr/202610/31/6ae5a452349f2.jpg"],
-    title: "纪念日快乐",
-    story: "这一天不是故事的终点，是我们继续相爱下去的又一个起点。"
+    title: "洛阳之旅",
+    story: "烤肠大侠出世之地 是我 也是我和你第一次旅游的地方 短短的一周末超级开心！！！！！玩不够都 
+所以以后还想和你去更多的地方 拍好看的照片 还有在不同的地方(   ) 你肯定也是这么想的嘻嘻"
   },
   {
     stackClass: "stack6",
     imgs: ["https://bee-reg-ab.imagency.cn/mr/202610/31/6ae5ac195307f.jpg"],
     title: "这是你",
-    story: "点一下时间试试呀"
+    story: "点一下时间试试的呀"
   }
 ];
 
 // ========== 时间盒子弹出的小作文 ==========
 const essayText = `
-谢谢你出现在我的生命里，
-和你在一起的每一刻，我都觉得很珍贵。
-未来的日子，我想一直陪在你身边，
-岁岁年年，永不分开。
+给宝宝 啵啵 小萌猪 蕊蕊 的一封信： 
+   两周年快乐宝宝，不知道到你看到的时候有没有到两周年，也不知道我有没有没忍住告诉你这个小东西的存在，不过这是我计划很久的东西了，但是你放心的呀，不麻烦，也木有耽误我！
+   今年我们做了好多事，圆了我的旅游梦，而且是和你一起的旅游，我们吃了好吃的逛逛了好久，还志同道合的砍掉了冗余的行程，好开心呀，现在想想也是流出开心的眼泪。今年我还收到了你送我的花花，好大一束我去，超级好看还香香的，特别喜欢花也特别喜欢你。今年有小猪还用我的账号开启了自己的抖音之路，看你兴致勃勃的发照片，别人看见了我还有点小吃醋呢，但是看你那么开心，我也特别开心，你以后火了可别把我忘了，小心我抢走你的账号！还有好多好多喜欢的回忆，比如遇到老爷爷拍照，还有去乐华城玩，特别开心特别惊喜，如果没有你的话，我肯定没有这么多彩的经历！喜欢你宝宝，爱你宝宝！
+   感觉和你在一起的第二年慢慢的，也有争吵和插曲这样没有那么美好的回忆，但是在我心里不是糟糕的映像，因为我总感觉心里是稳稳的，不像第一年一样总是惴惴不安，不会心里总觉得你不在意我或者不关心我之类的，因为我相信咱们能解决好。但是也想和你说说对不起，心里总想着我们淡淡的稳稳的幸福着，偶尔做了让你难过的事，我自己心里也很自责，觉得自己没好好说话，没多问问你，但是做也做了，我没理由开解自己说没有做。但是宝宝我知道你心里也和我一样知道对方绝对爱自己，或许有时候做错了一些小事，我哄哄你你哄哄我，我们就好好的一起面对啦，我肯定会对你好好的呀，你也要对我好好的呀！爱你宝宝，如果你相信我们的话，亲亲我一口(如果咱们最后定的地方人有点多，可以挤我一下)。
+   下一年，我们又会有什么经历呢？奇思妙想的你有没有幻想呢？不管更多彩一点，或者平平淡淡的一年，只要和你一起我都会喜欢的！我相信你也是，对吗宝宝？爱你呀˶>ᗜ<˶
+                                         From：你身边的人
 `;
 
 // 渲染五组堆叠
