@@ -184,56 +184,52 @@ h1{color:#d84370;font-size:26px;margin-bottom:24px}
 // ========== 起始时间：2024年11月26日 14:00:00 ==========
 const startDate = new Date(2024, 10, 26, 14, 0, 0);
 
-// ========== 五组拍立得堆叠配置【这里可以加很多图片！】 ==========
-// stackClass：对应上面css的stack1~stack5
-// imgs：本组所有图片路径，顺序就是轮换顺序
-// title：本组标题，最后一张点击弹窗标题
-// story：本组回忆文案，最后一张点击弹窗内容
+// ========== 五组拍立得堆叠配置【全部改成反引号，直接回车换行不会崩】 ==========
 const stackList = [
   {
     stackClass: "stack1",
     imgs: ["https://s41.ax1x.com/2026/10/31/pncpqUJ.png","https://s41.ax1x.com/2026/10/31/pncpbE4.jpg","https://s41.ax1x.com/2026/10/31/pncp4g0.png"],
     title: "结尾与开始",
-    story: "高中喜欢了你好久 总想着没有一个正经的合照 好像不正经的合照都没有 最后鼓起勇气找你傻傻的合了一张影 衣服裤子都没有整理好 你也不提醒我一下 让我们的高中整整齐齐的结尾
+    story: `高中喜欢了你好久 总想着没有一个正经的合照 好像不正经的合照都没有 最后鼓起勇气找你傻傻的合了一张影 衣服裤子都没有整理好 你也不提醒我一下 让我们的高中整整齐齐的结尾
 暑假心心念念约你吃饭你说要回西安 还好我不甘心 时常与你联系着 时常烦着你 一直到大一才和你吃上第一顿饭 看你吃饭的样子好可爱 还送了你小玩偶 
-接下来就是开始 怀着一颗忐忑的心 我向你表白了 虽然被你猜的八九不离十 但是你肯定想不到花出现的时机吧(≖֊≖) 还好你答应了 不然我要尴尬到吃花了"
+接下来就是开始 怀着一颗忐忑的心 我向你表白了 虽然被你猜的八九不离十 但是你肯定想不到花出现的时机吧(≖֊≖) 还好你答应了 不然我要尴尬到吃花了`
   },
   {
     stackClass: "stack2",
     imgs: ["https://bee-reg-ab.imagency.cn/mr/202610/31/6ae5a45324b97.jpg","https://s41.ax1x.com/2026/10/31/pnc9nr8.jpg","https://s41.ax1x.com/2026/10/31/pnc9F5d.png","https://s41.ax1x.com/2026/10/31/pnc9V2t.png","https://s41.ax1x.com/2026/10/31/pnc9mKf.png","https://bee-reg-ab.imagency.cn/mr/202610/31/6ae5a45418128.jpg"],
     title: "幸福的小日常",
-    story: "和你吃了好多没吃过的好吃的 溜达了好多美美的公园 还和你在文景山上探讨了学术问题◉‿◉ 
+    story: `和你吃了好多没吃过的好吃的 溜达了好多美美的公园 还和你在文景山上探讨了学术问题◉‿◉ 
 看见你在我身边萌萌的笑 开开心心的奔跑 总是发自内心的嘴角上扬呀 
-希望你多笑笑 和我一起傻呵呵的快乐"
+希望你多笑笑 和我一起傻呵呵的快乐`
   },
   {
     stackClass: "stack3",
     imgs: ["https://bee-reg-ab.imagency.cn/mr/202610/31/6ae5a2231b9d2.jpg","https://s41.ax1x.com/2026/10/31/pnc9G2q.png","https://bee-reg-ab.imagency.cn/mr/202610/31/6ae5a20fa0134.jpg","https://bee-reg-ab.imagency.cn/mr/202610/31/6ae5a5099f2ab.jpg","https://bee-reg-ab.imagency.cn/mr/202610/31/6ae5a50a3f413.jpg","https://bee-reg-ab.imagency.cn/mr/202610/31/6ae5a509c31ca.jpg"],
     title: "两只猪的生日",
-    story: "看见小照片就想起来我收到小书时候流泪的样子 尴尬死了还被店员看到了 特别喜欢 和你闹矛盾的时候我就有时候翻出来看
+    story: `看见小照片就想起来我收到小书时候流泪的样子 尴尬死了还被店员看到了 特别喜欢 和你闹矛盾的时候我就有时候翻出来看
   也想起来小萌猪和大家过完生日自己难过过的和我说委屈屈 我说第二年和我过 我心里只有你
   所以就有了那么多好看的生日照片呀 我做这些的时候看着都无敌心动 太可爱太萌了 我准备的好 你长的好嘻嘻
-为啥没有你给我送的花的照片！因为那系我的 不给你看"
+为啥没有你给我送的花的照片！因为那系我的 不给你看`
   },
   {
     stackClass: "stack4",
     imgs: ["https://bee-reg-ab.imagency.cn/mr/202610/31/6ae5a20f9f218.jpg","https://bee-reg-ab.imagency.cn/mr/202610/31/6ae5a20eb26ea.jpg","https://bee-reg-ab.imagency.cn/mr/202610/31/6ae5a20f8f72b.jpg"],
     title: "一周年 ᗜ֊ᗜ",
-    story: "这个枫叶超级好看 是我们昨年过周年前一周去看的 那天冷冷的 但是和你贴贴的时候暖暖的
-周年过的也是完美 超级开心 看到照片就想起来你给我夹头发还有拍照片了 超级认真超级萌 宣！"
+    story: `这个枫叶超级好看 是我们昨年过周年前一周去看的 那天冷冷的 但是和你贴贴的时候暖暖的
+周年过的也是完美 超级开心 看到照片就想起来你给我夹头发还有拍照片了 超级认真超级萌 宣！`
   },
   {
     stackClass: "stack5",
     imgs: ["https://bee-reg-ab.imagency.cn/mr/202610/31/6ae5a4572584d.jpg","https://bee-reg-ab.imagency.cn/mr/202610/31/6ae5a457240c0.jpg","https://bee-reg-ab.imagency.cn/mr/202610/31/6ae5a452349f2.jpg"],
     title: "洛阳之旅",
-    story: "烤肠大侠出世之地 是我 也是我和你第一次旅游的地方 短短的一周末超级开心！！！！！玩不够都 
-所以以后还想和你去更多的地方 拍好看的照片 还有在不同的地方(   ) 你肯定也是这么想的嘻嘻"
+    story: `烤肠大侠出世之地 是我 也是我和你第一次旅游的地方 短短的一周末超级开心！！！！！玩不够都 
+所以以后还想和你去更多的地方 拍好看的照片 还有在不同的地方(   ) 你肯定也是这么想的嘻嘻`
   },
   {
     stackClass: "stack6",
     imgs: ["https://bee-reg-ab.imagency.cn/mr/202610/31/6ae5ac195307f.jpg"],
     title: "这是你",
-    story: "点一下时间试试的呀"
+    story: `点一下时间试试的呀`
   }
 ];
 
@@ -320,7 +316,7 @@ essayModal.addEventListener("click",(e)=>{
   if(e.target === essayModal) closeEssayModal();
 })
 
-// ========== 时长计算逻辑 ==========
+// ========== 【你原来的计时代码！原样复原】 ==========
 function updateTime(){
   const now = new Date();
   let years = now.getFullYear() - startDate.getFullYear();
